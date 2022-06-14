@@ -29,3 +29,7 @@ q_movies['Score'] = q_movies.apply(weighted_rating, axis=1)
 q_movies = q_movies.sort_values('Score', ascending=False)
 
 print(q_movies[['title', 'vote_count', 'vote_average', 'Score']].head(20))
+
+df = pd.DataFrame(q_movies[['title', 'vote_count', 'vote_average', 'Score']].head(20))
+
+df.to_csv('top_20_movies.csv', index=False)
