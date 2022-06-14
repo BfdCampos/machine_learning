@@ -1,5 +1,5 @@
 # machine-learning
-A private repo for me to store my ML learning tasks and tests
+A personal repo for me to store my ML learning tasks and tests
 
 We will be starting with a course from datacamp.com [here](https://www.datacamp.com/tutorial/recommender-systems-python).
 
