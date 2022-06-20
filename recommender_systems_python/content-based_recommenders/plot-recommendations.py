@@ -40,7 +40,7 @@ def get_recommendations(title, top, cosine_sim=cosine_sim):
     idx = indices[title]
     sim_scores = list(enumerate(cosine_sim[idx]))
     sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
-    sim_scores = sim_scores[1:int(top)]
+    sim_scores = sim_scores[1:int(top) + 1]
     movie_indices = [i[0] for i in sim_scores]
     return metadata['title'].iloc[movie_indices]
 
